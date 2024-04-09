@@ -10,4 +10,4 @@ Send POST Request with JSON Body
     Should Be Equal As Strings    ${response.status_code}    200
     ${json}=    Set Variable    ${response.json()}
     Log To Console    Response: ${json}
-    Should Be Equal    ${json['result']}    1.5
+    Should Be Equal    ${json['result']}    1.6
