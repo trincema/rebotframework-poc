@@ -35,10 +35,29 @@ Boundary Value Analysis
 | n = 0                 | n = 1, 10              | n = 11                   |
 
 Test Scenarios
-| Scenario                        | Parameters        | Expected Response            | Status code |
-| :-----------------------------: | :---------------: | :--------------------------: | :---------: |
-| Station 1 Interval Compliance   | payload=null      | {'result': >='1' && <='60'}  | 200         |
-| Station 2 Interval Compliance   | payload=null      | {'result': >='1' && <='60'}  | 200         |
-| Station 3 Interval Compliance   | payload=null      | {'result': >='1' && <='60'}  | 200         |
-| Station 4 Interval Compliance   | payload=null      | {'result': >='1' && <='60'}  | 200         |
-| Station 5 Interval Compliance   | payload=null      | {'result': >='1' && <='60'}  | 200         |
+| Scenario                        | Parameters        | Expected Response        | Status code |
+| :-----------------------------: | :---------------: | :----------------------: | :---------: |
+| Station 1 SetValues Compliance  | payload=0         | {'result': 'FAILED'}     | 200         |
+| Station 1 SetValues Compliance  | payload=1         | {'result': 'OK'}         | 200         |
+| Station 1 SetValues Compliance  | payload=10        | {'result': 'OK'}         | 200         |
+| Station 1 SetValues Compliance  | payload=11        | {'result': 'FAILED'}     | 200         |
+| :-----------------------------: | :---------------: | :----------------------: | :---------: |
+| Station 2 SetValues Compliance  | payload=0         | {'result': 'FAILED'}     | 200         |
+| Station 2 SetValues Compliance  | payload=1         | {'result': 'OK'}         | 200         |
+| Station 2 SetValues Compliance  | payload=10        | {'result': 'OK'}         | 200         |
+| Station 2 SetValues Compliance  | payload=11        | {'result': 'FAILED'}     | 200         |
+| :-----------------------------: | :---------------: | :----------------------: | :---------: |
+| Station 3 SetValues Compliance  | payload=0         | {'result': 'FAILED'}     | 200         |
+| Station 3 SetValues Compliance  | payload=1         | {'result': 'OK'}         | 200         |
+| Station 3 SetValues Compliance  | payload=10        | {'result': 'OK'}         | 200         |
+| Station 3 SetValues Compliance  | payload=11        | {'result': 'FAILED'}     | 200         |
+| :-----------------------------: | :---------------: | :----------------------: | :---------: |
+| Station 4 SetValues Compliance  | payload=0         | {'result': 'FAILED'}     | 200         |
+| Station 4 SetValues Compliance  | payload=1         | {'result': 'OK'}         | 200         |
+| Station 4 SetValues Compliance  | payload=10        | {'result': 'OK'}         | 200         |
+| Station 4 SetValues Compliance  | payload=11        | {'result': 'FAILED'}     | 200         |
+| :-----------------------------: | :---------------: | :----------------------: | :---------: |
+| Station 5 SetValues Compliance  | payload=0         | {'result': 'FAILED'}     | 200         |
+| Station 5 SetValues Compliance  | payload=1         | {'result': 'OK'}         | 200         |
+| Station 5 SetValues Compliance  | payload=10        | {'result': 'OK'}         | 200         |
+| Station 5 SetValues Compliance  | payload=11        | {'result': 'FAILED'}     | 200         |
