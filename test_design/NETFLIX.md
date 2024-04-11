@@ -33,4 +33,4 @@ So, the final answer to the question *how would you test in production?* would b
 - There is not plan with 100E monthly fee. But I get the idea, it was just a simulation.
 
 ## References
-- [1] Testing in production, Optimizely, `https://www.optimizely.com/optimization-glossary/testing-in-production/#:~:text=Testing%20in%20production%20(TIP)%20is,released%20live%20to%20real%20users.`
+- [1] Testing in production, Optimizely, [Link](https://www.optimizely.com/optimization-glossary/testing-in-production/#:~:text=Testing%20in%20production%20(TIP)%20is,released%20live%20to%20real%20users).
