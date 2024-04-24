@@ -20,7 +20,7 @@ Stations are connected to the service via the internet by HTTP/HTTPS protocol. W
 the service receives a test request, it will send the command to the station and reply
 with the response from the station if the station is online. A station is compliant when all
 expected responses are met. Implement software that automates station compliance
-tests for stations with id = [1,2,3,4,5].
+tests for stations with id = [1,2,3,4,5]
 ## StationGetVersion Compliance Test Analysis
 The documentation only specifies that `Expected Response: > 1.6`.
 After some investigation I concluded that the payload does not influence the response,
