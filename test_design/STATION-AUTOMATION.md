@@ -16,6 +16,11 @@ Request example:<br/>
 3. Command: setValues. Payload: {n} where n is a number<br/>
     a. If 1 < n < 10. Expected Response: OK.<br/>
     b. If n > 10. Expected Response: FAILED.<br/>
+Stations are connected to the service via the internet by HTTP/HTTPS protocol. When
+the service receives a test request, it will send the command to the station and reply
+with the response from the station if the station is online. A station is compliant when all
+expected responses are met. Implement software that automates station compliance
+tests for stations with id = [1,2,3,4,5].
 ## StationGetVersion Compliance Test Analysis
 The documentation only specifies that `Expected Response: > 1.6`.
 After some investigation I concluded that the payload does not influence the response,
