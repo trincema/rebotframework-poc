@@ -1,4 +1,21 @@
 # Test Analysis and Design
+## Specifications
+Endpoint: [POST] https://api-energy-k8s.test.virtaglobal.com/v1/tests/{stationId}<br/>
+Request body:<br/>
+`{
+    command: string,
+    payload: null|string|number
+}`
+Request example:<br/>
+`{
+    command: 'setValues',
+    payload: 1
+}`
+1. Command: getVersion. Expected Response: > 1.6<br/>
+2. Command: getInterval. Expected Response: any value from 1 to 60<br/>
+3. Command: setValues. Payload: {n} where n is a number<br/>
+    a. If 1 < n < 10. Expected Response: OK.<br/>
+    b. If n > 10. Expected Response: FAILED.<br/>
 ## StationGetVersion Compliance Test Analysis
 The documentation only specifies that `Expected Response: > 1.6`.
 After some investigation I concluded that the payload does not influence the response,

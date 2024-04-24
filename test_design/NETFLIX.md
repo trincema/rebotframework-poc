@@ -29,6 +29,17 @@ So, the final answer to the question *how would you test in production?* would b
 ## How would you ensure issues are tracked?
 - Well, I'm not really sure what is meant by this question, but it seems that many companies, among which also Netflix, acknowledges that QA Specialists will not be able to catch all issues by themselves, so they usually provide some sort of Help Center in order for clients to also report issues encountered while using the services: `https://help.netflix.com/en/`. This in effect is an entire feature in itself and also involves some human personnel (an entire department of customer support personnel, in the case of Netflix most probably also distributed accross the Globe) handling these kind of issues in some way or another. My account has been hacked at some point, so I reported the issue to Netflix, and a human support was assigned to me to talk it through, and also tried to solve the issue, and I bet she also opened a bug ticket internaly for the issue and in the end it was so bad that my gmail address was completely compromised, just changing the password didn't worked (Netflix representative advised me with this version 1st, but it didn't solved the issue), I had to change my email for the account in the end. It was a pretty embarrasing issue for a big company like Netflix.
 ![Screenshot 2024-04-11 094015](https://github.com/trincema/rebotframework-poc/assets/7762113/60dfa69f-111a-471b-8133-394f3f1b45e4)
+## Test Analysis and Design (Positive)
+| Scenario                        | Details                                            | Input        | Expected Outcome |
+| :-----------------------------: | :------------------------------------------------: | :----------------------: | :---------: |
+| Successful Registration         | Ensure users can register with valid credentials   | Valid email address, password, and personal information       | 200         |
+| Station 2 Version Compliance    | payload=null      | {'result': >'1.6'}       | 200         |
+| Station 3 Version Compliance    | payload=null      | {'result': >'1.6'}       | 200         |
+| Station 4 Version Compliance    | payload=null      | {'result': >'1.6'}       | 200         |
+| Station 5 Version Compliance    | payload=null      | {'result': >'1.6'}       | 200         |
+
+## Test Analysis and Design (Negative)
+
 ## Notes
 - There is not plan with 100E monthly fee. But I get the idea, it was just a simulation.
 
